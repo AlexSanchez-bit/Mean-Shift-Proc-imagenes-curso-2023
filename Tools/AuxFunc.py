@@ -34,9 +34,9 @@ def Ep(image):
 
 
 def C(A, B):
-    return E(Sum(A,B))
+    return E(ImgDif(A,B))
 def D(A, B):
-    return Ep(Sum(A,B))
+    return Ep(ImgDif(A,B))
 
 def H(A,B):
     return (C(A,B) + 5*D(A,B))/2
