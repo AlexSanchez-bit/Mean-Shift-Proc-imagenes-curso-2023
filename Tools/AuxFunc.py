@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-from AbelianGroup import *
+from Tools.AbelianGroup import *
 
 def E(image):
     # Convertir la imagen a escala de grises
