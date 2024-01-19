@@ -8,6 +8,7 @@ def Sum(A, B):
 
 def ImgDif(A, B):
     height, width, channels = A.shape
+    B = -B
     # Crear una matriz de ceros (imagen en negro)
     image =np.minimum((A + B) % 256, (-(A + B)) % 256)
     # Construir la imagen píxel a píxel
