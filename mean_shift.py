@@ -22,18 +22,18 @@ def mean_shift_custom_stopping(image, sp, sr, threshold):
 
     return current_shift
 
-# Carga tu imagen
-image = cv2.imread('image.tif')
 
-# Parámetros de Mean Shift y criterio de parada
-spatial_radius = 15
-color_radius = 12
-convergence_threshold = 0.5
+def apply_mean_shift(imageDirectory,outputDir):
+    image = cv2.imread(imageDirectory)
 
-# Aplica Mean Shift con criterio de parada personalizado
-result_image = mean_shift_custom_stopping(image, sp=spatial_radius, sr=color_radius, threshold=convergence_threshold)
-
-# Muestra la imagen resultante
-cv2.imshow('Segmented Image', result_image)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+    # Parámetros de Mean Shift y criterio de parada
+    spatial_radius = 15
+    color_radius = 12
+    convergence_threshold = 0.5
+    # Aplica Mean Shift con criterio de parada personalizado
+    result_image = mean_shift_custom_stopping(image, sp=spatial_radius, sr=color_radius, threshold=convergence_threshold)
+    # Muestra la imagen resultante
+    # cv2.imshow('Segmented Image', result_image)
+    cv2.imwrite(outputDir, result_image)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
