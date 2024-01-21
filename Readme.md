@@ -1,11 +1,13 @@
 # Segmentación de imágenes de histopatología usando el algoritmo Mean-Shift. 
 Comparación de varios criterios de parada.  
 
-##Integrantes
--Alex Sanchez Saez
--Jose Carlos Pendas
--Ovidio Navarro Pazos
--Jesus Armando Padron 
+### Integrantes
+- Alex Sanchez Saez
+- Jose Carlos Pendas
+- Ovidio Navarro Pazos
+- Jesus Armando Padron 
+### Tutora
+Profesora Angela León Mecías, `aleonmecias@gmail.com`
 
 ## Introducción
 En este trabajo se realiza la implementación de un código para el filtrado de imágenes utilizando el algoritmo Mean Shift. El enfoque se centra en el uso de un criterio de convergencia específico basado en un grupo abeliano definido por los autores del paper original. El código se compone de varias partes, cada una contribuyendo a la aplicación efectiva del algoritmo. para poner en marcha nuestro proyecto debe ejecutar utilizando el interprete de python el fichero `__main__.py__` que toma las imagenes almacenadas en la carpeta `input` y despues de procesarlas las coloca en la carpeta `output`. El criterio de parada nos fue proporcionado en [1].
@@ -29,15 +31,13 @@ El objetivo del proyecto era lograr una implementación eficiente de Mean-Shift 
 los diferentes criterios de parada que aparecen en c[1] . Se logro ya que se logro un filtrado de imagenes , obteniendo resultados positivos y un rendimiento optimo por parte del algoritmo.
 
 ## Referencias Bibliográficas 
--Luis E. Fernández, Juliet Bringas, A. León-Mecías. New algebraic structure for the detection of 
+- Luis E. Fernández, Juliet Bringas, A. León-Mecías. New algebraic structure for the detection of 
 similarity between images. An application to the Mean Shift Algorithm. Paper in preparation. 
--Damir Demirovi. An Implementation of the Mean Shift Algorithm. Published in Image Processing 
+- Damir Demirovi. An Implementation of the Mean Shift Algorithm. Published in Image Processing 
 On Line on 2019–09–17. https://doi.org/10.5201/ipol.2019.255. 
-Miguel A. Carreira-Perpiñán. A review of mean-shift algorithms for clustering. arXiv: 
+- Miguel A. Carreira-Perpiñán. A review of mean-shift algorithms for clustering. arXiv: 
 1503.00687v1, 2015. similarity between images. An application to the Mean Shift Algorithm. Paper in preparation. 
-Damir Demirovi. An Implementation of the Mean Shift Algorithm. Published in Image Processing 
-On Line on 2019–09–17. https://doi.org/10.5201/ipol.2019.255. 
--Miguel A. Carreira-Perpiñán. A review of mean-shift algorithms for clustering. arXiv: 
+- Miguel A. Carreira-Perpiñán. A review of mean-shift algorithms for clustering. arXiv: 
 1503.00687v1, 2015. 
 
 #Algunos Resultados
